@@ -100,7 +100,9 @@ export async function generatePaymentReceiptPDF({ date, amount, receivedFrom, pa
     doc.setTextColor(60, 60, 60);
     
     const companyDetails = [
-      'Address: Telangana, India',
+      'Address: PLOT NO-102,103 TEMPLE LANE MYTHRI NAGAR',
+      'Shri Ambika Vidya Mandir, MATHRUSRINAGAR, SERILINGAMPALLY',
+      'Hyderabad, Rangareddy, Telangana, 500049',
       'Email: contact@axisogreen.in',
       'Website: www.axisogreen.in',
       'GSTIN: 36ABBCA4478M1Z9'
@@ -118,7 +120,7 @@ export async function generatePaymentReceiptPDF({ date, amount, receivedFrom, pa
     // Separator line
     doc.setDrawColor(220, 220, 220);
     doc.setLineWidth(0.5);
-    doc.line(margin, 58, pageWidth - margin, 58);
+    doc.line(margin, 65, pageWidth - margin, 65);
     
     // Payment Receipt title - centered and professional
     doc.setFont('times', 'bold');
